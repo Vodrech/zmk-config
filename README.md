@@ -1,4 +1,4 @@
-# Guidance
+# guideance
 
 1. Check that /dev/ttyACM0 or any equal is existing
 2. Run lsblk check that "sdc" is shown
