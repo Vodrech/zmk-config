@@ -1,4 +1,19 @@
-# guideance
+# Guidance
+
+```
+# Validating Device in bootloader mode
+ ls /dev/tty <TAB> --> /dev/ttyACM0
+ lsblk --> sdc
+
+# Setup
+ mkdir -p /mnt/nano
+ mount -t vfat /dev/sdc /mnt/nano
+ cp ${BOOTLOADER_PATH}.uf2 /mnt/nano
+
+# Cleanup
+ umount /mnt/nano
+ rm -R /mnt/nano
+```
 
 1. Check that /dev/ttyACM0 or any equal is existing
 2. Run lsblk check that "sdc" is shown
